@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/Study/AUT/Term6/Computer Architecture/Project 1/Code/Project-part1/Full_adder.xst" -ofn "D:/Study/AUT/Term6/Computer Architecture/Project 1/Code/Project-part1/Full_adder.syr" 
+xst -intstyle ise -ifn "D:/Study/AUT/Term6/Computer Architecture/Project 1/Code/Project-part1/Full_adder.xst" -ofn "D:/Study/AUT/Term6/Computer Architecture/Project 1/Code/Project-part1/Full_adder.syr" 
+xst -intstyle ise -ifn "D:/Study/AUT/Term6/Computer Architecture/Project 1/Code/Project-part1/Full_adder.xst" -ofn "D:/Study/AUT/Term6/Computer Architecture/Project 1/Code/Project-part1/Full_adder.syr" 

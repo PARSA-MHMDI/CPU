@@ -1,0 +1,665 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ha.vhd" into library work
+Parsing entity <HA>.
+Parsing architecture <Behavioral> of entity <ha>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\fa.vhd" into library work
+Parsing entity <FA>.
+Parsing architecture <Behavioral> of entity <fa>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\CAS.vhd" into library work
+Parsing entity <CAS>.
+Parsing architecture <Behavioral> of entity <cas>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\BlockY.vhd" into library work
+Parsing entity <BlockY>.
+Parsing architecture <Behavioral> of entity <blocky>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\BlockX.vhd" into library work
+Parsing entity <BlockX>.
+Parsing architecture <Behavioral> of entity <blockx>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" into library work
+Parsing entity <SQR>.
+Parsing architecture <Behavioral> of entity <sqr>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\MLP.vhd" into library work
+Parsing entity <MLP>.
+Parsing architecture <Behavioral> of entity <mlp>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <ALU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MLP> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <HA> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <FA> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <SQR> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BlockX> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CAS> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BlockY> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd" Line 56: enb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd" Line 65: temp should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd" Line 66: temp should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd" Line 73: carry_in should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd" Line 74: ac should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd" Line 76: e should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd" Line 81: carry_in should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd" Line 82: e should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd" Line 83: ac should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd" Line 89: ac should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd" Line 95: ac should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd" Line 98: ml should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd" Line 101: sq should be on the sensitivity list of the process
+WARNING:HDLCompiler:634 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd" Line 40: Net <ml[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd" Line 41: Net <sq[15]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ALU.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2935 - Signal 'ml<15:12>', unconnected in block 'ALU', is tied to its initial value (0000).
+WARNING:Xst:2935 - Signal 'sq<15:8>', unconnected in block 'ALU', is tied to its initial value (00000000).
+    Found 17-bit adder for signal <GND_6_o_GND_6_o_add_1_OUT> created at line 64.
+    Found 16-bit adder for signal <input1[15]_GND_6_o_add_2_OUT> created at line 69.
+    Found 64x5-bit Read Only RAM for signal <_n0313>
+WARNING:Xst:737 - Found 1-bit latch for signal <output<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <carry>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <E>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  51 Latch(s).
+	inferred 110 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <MLP>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\MLP.vhd".
+    Summary:
+	no macro.
+Unit <MLP> synthesized.
+
+Synthesizing Unit <HA>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\ha.vhd".
+    Summary:
+Unit <HA> synthesized.
+
+Synthesizing Unit <FA>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\fa.vhd".
+    Summary:
+	no macro.
+Unit <FA> synthesized.
+
+Synthesizing Unit <SQR>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd".
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 63: Output port <S11> of the instance <Y1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 63: Output port <S21> of the instance <Y1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 74: Output port <S11> of the instance <Y2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 74: Output port <S21> of the instance <Y2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 90: Output port <S11> of the instance <Y4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 90: Output port <S21> of the instance <Y4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 90: Output port <S22> of the instance <Y4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 90: Output port <DO1> of the instance <Y4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 90: Output port <DO2> of the instance <Y4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 94: Output port <S21> of the instance <Y5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 94: Output port <S22> of the instance <Y5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 94: Output port <DO1> of the instance <Y5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 94: Output port <DO2> of the instance <Y5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 98: Output port <S21> of the instance <Y6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 98: Output port <S22> of the instance <Y6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 98: Output port <DO1> of the instance <Y6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 98: Output port <DO2> of the instance <Y6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 102: Output port <DO1> of the instance <X4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\SQR.vhd" line 102: Output port <DO2> of the instance <X4> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <SQR> synthesized.
+
+Synthesizing Unit <BlockX>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\BlockX.vhd".
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\BlockX.vhd" line 26: Output port <PO> of the instance <CAS1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\BlockX.vhd" line 27: Output port <PO> of the instance <CAS2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\BlockX.vhd" line 28: Output port <PO> of the instance <CAS3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\BlockX.vhd" line 29: Output port <PO> of the instance <CAS4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\BlockX.vhd" line 30: Output port <PO> of the instance <CAS5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\BlockX.vhd" line 31: Output port <PO> of the instance <CAS6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\BlockX.vhd" line 32: Output port <PO> of the instance <CAS7> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <BlockX> synthesized.
+
+Synthesizing Unit <CAS>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\CAS.vhd".
+    Summary:
+Unit <CAS> synthesized.
+
+Synthesizing Unit <BlockY>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\BlockY.vhd".
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\BlockY.vhd" line 27: Output port <PO> of the instance <CAS1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\BlockY.vhd" line 28: Output port <PO> of the instance <CAS2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\BlockY.vhd" line 29: Output port <PO> of the instance <CAS3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project 1\ATENA\CPU-DESIGN-VHDL-PART1-master\Project-part1\BlockY.vhd" line 30: Output port <PO> of the instance <CAS4> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <BlockY> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 64x5-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 2
+ 16-bit adder                                          : 1
+ 17-bit adder                                          : 1
+# Latches                                              : 51
+ 1-bit latch                                           : 51
+# Multiplexers                                         : 110
+ 1-bit 2-to-1 multiplexer                              : 110
+# Xors                                                 : 211
+ 1-bit xor2                                            : 211
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <ALU>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0313> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 5-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <intput3>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ALU> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 64x5-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 2
+ 16-bit adder                                          : 1
+ 17-bit adder                                          : 1
+# Multiplexers                                         : 110
+ 1-bit 2-to-1 multiplexer                              : 110
+# Xors                                                 : 211
+ 1-bit xor2                                            : 211
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <MLP>: instances <ha3>, <ha4> of unit <HA> are equivalent, second instance is removed
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <SQR> ...
+
+Optimizing unit <MLP> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ALU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 256
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 15
+#      LUT2                        : 28
+#      LUT3                        : 28
+#      LUT4                        : 17
+#      LUT5                        : 24
+#      LUT6                        : 75
+#      MUXCY                       : 31
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 51
+#      LDC                         : 17
+#      LDE                         : 34
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 57
+#      IBUF                        : 40
+#      OBUF                        : 17
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              34  out of  126800     0%  
+ Number of Slice LUTs:                  189  out of  63400     0%  
+    Number used as Logic:               189  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    190
+   Number with an unused Flip Flop:     156  out of    190    82%  
+   Number with an unused LUT:             1  out of    190     0%  
+   Number of fully used LUT-FF pairs:    33  out of    190    17%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          58
+ Number of bonded IOBs:                  57  out of    210    27%  
+    IOB Flip Flops/Latches:              17
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+enb                                | IBUF+BUFG              | 34    |
+_n0313<2>(Mram__n031321:O)         | NONE(*)(carry)         | 1     |
+_n0313<0>(Mram__n031341:O)         | NONE(*)(output_12)     | 16    |
+-----------------------------------+------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 10.915ns
+   Maximum output required time after clock: 0.751ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'enb'
+  Total number of paths / destination ports: 680 / 68
+-------------------------------------------------------------------------
+Offset:              1.601ns (Levels of Logic = 18)
+  Source:            input1<0> (PAD)
+  Destination:       temp_15 (LATCH)
+  Destination Clock: enb falling
+
+  Data Path: input1<0> to temp_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   0.001   0.458  input1_0_IBUF (input1_0_IBUF)
+     LUT2:I0->O            1   0.097   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_lut<0> (Madd_GND_6_o_GND_6_o_add_1_OUT_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_cy<0> (Madd_GND_6_o_GND_6_o_add_1_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_cy<1> (Madd_GND_6_o_GND_6_o_add_1_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_cy<2> (Madd_GND_6_o_GND_6_o_add_1_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_cy<3> (Madd_GND_6_o_GND_6_o_add_1_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_cy<4> (Madd_GND_6_o_GND_6_o_add_1_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_cy<5> (Madd_GND_6_o_GND_6_o_add_1_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_cy<6> (Madd_GND_6_o_GND_6_o_add_1_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_cy<7> (Madd_GND_6_o_GND_6_o_add_1_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_cy<8> (Madd_GND_6_o_GND_6_o_add_1_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_cy<9> (Madd_GND_6_o_GND_6_o_add_1_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_cy<10> (Madd_GND_6_o_GND_6_o_add_1_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_cy<11> (Madd_GND_6_o_GND_6_o_add_1_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_cy<12> (Madd_GND_6_o_GND_6_o_add_1_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_cy<13> (Madd_GND_6_o_GND_6_o_add_1_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_cy<14> (Madd_GND_6_o_GND_6_o_add_1_OUT_cy<14>)
+     XORCY:CI->O           1   0.370   0.000  Madd_GND_6_o_GND_6_o_add_1_OUT_xor<15> (GND_6_o_GND_6_o_add_1_OUT<15>)
+     LDE:D                    -0.028          temp_15
+    ----------------------------------------
+    Total                      1.601ns (1.143ns logic, 0.458ns route)
+                                       (71.4% logic, 28.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_n0313<2>'
+  Total number of paths / destination ports: 6 / 2
+-------------------------------------------------------------------------
+Offset:              1.197ns (Levels of Logic = 3)
+  Source:            intput3<0> (PAD)
+  Destination:       carry (LATCH)
+  Destination Clock: _n0313<2> falling
+
+  Data Path: intput3<0> to carry
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            36   0.001   0.619  intput3_0_IBUF (intput3_0_IBUF)
+     LUT3:I0->O            2   0.097   0.383  intput3[5]_E_Mux_111_o1 (intput3[5]_E_Mux_111_o)
+     LUT5:I3->O            1   0.097   0.000  intput3[5]_carry_Mux_77_o (intput3[5]_carry_Mux_77_o)
+     LDC:D                    -0.028          carry
+    ----------------------------------------
+    Total                      1.197ns (0.195ns logic, 1.002ns route)
+                                       (16.3% logic, 83.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_n0313<0>'
+  Total number of paths / destination ports: 47463 / 32
+-------------------------------------------------------------------------
+Offset:              10.915ns (Levels of Logic = 20)
+  Source:            input1<14> (PAD)
+  Destination:       output_0 (LATCH)
+  Destination Clock: _n0313<0> falling
+
+  Data Path: input1<14> to output_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   0.001   0.762  input1_14_IBUF (input1_14_IBUF)
+     LUT6:I0->O            2   0.097   0.516  SQR1/X2/CAS4/Mxor_s_xo<0>1 (SQR1/X2/CAS4/s)
+     LUT5:I2->O            2   0.097   0.688  SQR1/X2/CAS4/full_adder/cout1 (SQR1/d<17>)
+     LUT6:I1->O           14   0.097   0.355  SQR1/Y1/CAS3/full_adder/cout (sq<4>)
+     LUT6:I5->O            2   0.097   0.560  SQR1/Y3/CAS2/full_adder/cout1 (SQR1/Y3/d<2>)
+     LUT6:I2->O            2   0.097   0.688  SQR1/Y3/CAS1/full_adder/cout1 (SQR1/d<30>)
+     LUT6:I1->O           12   0.097   0.607  SQR1/Y2/CAS1/full_adder/cout1 (sq<3>)
+     LUT6:I2->O            2   0.097   0.516  SQR1/Y3/CAS4/full_adder/cout1 (SQR1/Y3/d<3>)
+     LUT4:I1->O            2   0.097   0.561  SQR1/Y3/CAS3/full_adder/cout1 (SQR1/d<33>)
+     LUT6:I2->O           12   0.097   0.346  SQR1/Y2/CAS3/full_adder/cout1 (sq<2>)
+     LUT6:I5->O            3   0.097   0.389  SQR1/Y6/CAS2/full_adder/cout1 (SQR1/Y6/d<2>)
+     LUT6:I4->O            2   0.097   0.516  SQR1/Y5/CAS2/full_adder/cout1 (SQR1/Y5/d<2>)
+     LUT4:I1->O            2   0.097   0.561  SQR1/Y5/CAS1/full_adder/cout1 (SQR1/d<51>)
+     LUT6:I2->O            8   0.097   0.543  SQR1/Y4/CAS1/full_adder/cout1 (sq<1>)
+     LUT6:I3->O            1   0.097   0.000  Mmux_intput3[5]_output[0]_Mux_41_o25_G (N25)
+     MUXF7:I1->O           1   0.279   0.511  Mmux_intput3[5]_output[0]_Mux_41_o25 (Mmux_intput3[5]_output[0]_Mux_41_o24)
+     LUT6:I3->O            1   0.097   0.295  Mmux_intput3[5]_output[0]_Mux_41_o27_SW0 (N20)
+     LUT6:I5->O            1   0.097   0.295  Mmux_intput3[5]_output[0]_Mux_41_o27 (Mmux_intput3[5]_output[0]_Mux_41_o26)
+     LUT6:I5->O            1   0.097   0.000  Mmux_intput3[5]_output[0]_Mux_41_o28_G (N23)
+     MUXF7:I1->O           1   0.279   0.000  Mmux_intput3[5]_output[0]_Mux_41_o28 (intput3[5]_output[0]_Mux_41_o)
+     LDC:D                    -0.028          output_0
+    ----------------------------------------
+    Total                     10.915ns (2.208ns logic, 8.707ns route)
+                                       (20.2% logic, 79.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock '_n0313<0>'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            output_15 (LATCH)
+  Destination:       output<15> (PAD)
+  Source Clock:      _n0313<0> falling
+
+  Data Path: output_15 to output<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.279  output_15 (output_15)
+     OBUF:I->O                 0.000          output_15_OBUF (output<15>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock '_n0313<2>'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            carry (LATCH)
+  Destination:       carry (PAD)
+  Source Clock:      _n0313<2> falling
+
+  Data Path: carry to carry
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.472   0.279  carry (carry_OBUF)
+     OBUF:I->O                 0.000          carry_OBUF (carry)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock _n0313<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+enb            |         |         |    2.078|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock _n0313<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+enb            |         |         |    1.080|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 21.25 secs
+ 
+--> 
+
+Total memory usage is 4617776 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   70 (   0 filtered)
+Number of infos    :   32 (   0 filtered)
+

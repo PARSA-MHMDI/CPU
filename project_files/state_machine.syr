@@ -1,0 +1,885 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Reading design: state_machine.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "state_machine.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "state_machine"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : state_machine
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ha.vhd" into library work
+Parsing entity <HA>.
+Parsing architecture <Behavioral> of entity <ha>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\fa.vhd" into library work
+Parsing entity <FA>.
+Parsing architecture <Behavioral> of entity <fa>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\CAS.vhd" into library work
+Parsing entity <CAS>.
+Parsing architecture <Behavioral> of entity <cas>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\BlockY.vhd" into library work
+Parsing entity <BlockY>.
+Parsing architecture <Behavioral> of entity <blocky>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\BlockX.vhd" into library work
+Parsing entity <BlockX>.
+Parsing architecture <Behavioral> of entity <blockx>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" into library work
+Parsing entity <SQR>.
+Parsing architecture <Behavioral> of entity <sqr>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\MLP.vhd" into library work
+Parsing entity <MLP>.
+Parsing architecture <Behavioral> of entity <mlp>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ROM.vhd" into library work
+Parsing entity <ROM>.
+Parsing architecture <Behavioral> of entity <rom>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\RAM.vhd" into library work
+Parsing entity <RAM>.
+Parsing architecture <Behavioral> of entity <ram>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" into library work
+Parsing entity <state_machine>.
+Parsing architecture <Behavioral> of entity <state_machine>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <state_machine> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ROM> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RAM> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ALU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MLP> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <HA> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <FA> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <SQR> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BlockX> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CAS> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BlockY> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ALU.vhd" Line 56: enb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ALU.vhd" Line 65: temp should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ALU.vhd" Line 66: temp should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ALU.vhd" Line 73: carry_in should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ALU.vhd" Line 74: ac should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ALU.vhd" Line 76: e should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ALU.vhd" Line 81: carry_in should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ALU.vhd" Line 82: e should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ALU.vhd" Line 83: ac should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ALU.vhd" Line 89: ac should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ALU.vhd" Line 95: ac should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ALU.vhd" Line 98: ml should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ALU.vhd" Line 101: sq should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 133: rom_out should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 139: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 140: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 141: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 147: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 148: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 151: pc should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 153: ac should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 159: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 161: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 163: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 165: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 167: pc should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 179: pc should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 184: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 185: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 186: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 187: alu_out should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 188: alu_carry_out should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 191: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 195: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 196: dr should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 199: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 203: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 207: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 208: ac should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 209: pc should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 213: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 214: ac should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 215: pc should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 219: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 220: e should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 221: pc should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 225: ir should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 226: ac should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 227: pc should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd" Line 234: pc should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <state_machine>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\state_machine.vhd".
+    Found 2-bit register for signal <currentState>.
+    Found finite state machine <FSM_0> for signal <currentState>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | receiving_command                              |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit adder for signal <PC[9]_GND_6_o_add_55_OUT> created at line 227.
+    Found 1-bit 4-to-1 multiplexer for signal <currentState[1]_IR[15]_Mux_140_o> created at line 127.
+    Found 1-bit 4-to-1 multiplexer for signal <currentState[1]_IR[15]_Mux_142_o> created at line 127.
+WARNING:Xst:737 - Found 1-bit latch for signal <ROM_on>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_on>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALU_on>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <IR<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AR<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AR<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AR<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AR<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AR<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AR<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AR<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AR<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AR<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AR<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <ram_read_on>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PC<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PC<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PC<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PC<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PC<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PC<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PC<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PC<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PC<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <PC<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_IN<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_IN<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_IN<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_IN<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_IN<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_IN<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_IN<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_IN<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_IN<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_IN<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_IN<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_IN<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_IN<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_IN<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_IN<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_IN<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <E>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  73 Latch(s).
+	inferred  95 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <state_machine> synthesized.
+
+Synthesizing Unit <ROM>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ROM.vhd".
+WARNING:Xst:647 - Input <address<9:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'rom_data', unconnected in block 'ROM', is tied to its initial value.
+    Found 64x16-bit single-port Read Only RAM <Mram_rom_data> for signal <rom_data>.
+    Found 16-bit register for signal <data_out>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <ROM> synthesized.
+
+Synthesizing Unit <RAM>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\RAM.vhd".
+WARNING:Xst:647 - Input <address<9:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 64x16-bit single-port RAM <Mram_ram_data> for signal <ram_data>.
+    Found 16-bit register for signal <data_out>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <RAM> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ALU.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 17-bit adder for signal <GND_9_o_GND_9_o_add_1_OUT> created at line 64.
+    Found 16-bit adder for signal <input1[15]_GND_9_o_add_2_OUT> created at line 69.
+    Found 64x5-bit Read Only RAM for signal <_n0313>
+WARNING:Xst:737 - Found 1-bit latch for signal <output<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <carry>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <AC<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <E>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  51 Latch(s).
+	inferred 110 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <MLP>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\MLP.vhd".
+    Summary:
+	no macro.
+Unit <MLP> synthesized.
+
+Synthesizing Unit <HA>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\ha.vhd".
+    Summary:
+Unit <HA> synthesized.
+
+Synthesizing Unit <FA>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\fa.vhd".
+    Summary:
+	no macro.
+Unit <FA> synthesized.
+
+Synthesizing Unit <SQR>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd".
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 63: Output port <S11> of the instance <Y1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 63: Output port <S21> of the instance <Y1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 74: Output port <S11> of the instance <Y2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 74: Output port <S21> of the instance <Y2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 90: Output port <S11> of the instance <Y4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 90: Output port <S21> of the instance <Y4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 90: Output port <S22> of the instance <Y4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 90: Output port <DO1> of the instance <Y4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 90: Output port <DO2> of the instance <Y4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 94: Output port <S21> of the instance <Y5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 94: Output port <S22> of the instance <Y5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 94: Output port <DO1> of the instance <Y5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 94: Output port <DO2> of the instance <Y5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 98: Output port <S21> of the instance <Y6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 98: Output port <S22> of the instance <Y6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 98: Output port <DO1> of the instance <Y6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 98: Output port <DO2> of the instance <Y6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 102: Output port <DO1> of the instance <X4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\SQR.vhd" line 102: Output port <DO2> of the instance <X4> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <SQR> synthesized.
+
+Synthesizing Unit <BlockX>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\BlockX.vhd".
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\BlockX.vhd" line 26: Output port <PO> of the instance <CAS1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\BlockX.vhd" line 27: Output port <PO> of the instance <CAS2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\BlockX.vhd" line 28: Output port <PO> of the instance <CAS3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\BlockX.vhd" line 29: Output port <PO> of the instance <CAS4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\BlockX.vhd" line 30: Output port <PO> of the instance <CAS5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\BlockX.vhd" line 31: Output port <PO> of the instance <CAS6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\BlockX.vhd" line 32: Output port <PO> of the instance <CAS7> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <BlockX> synthesized.
+
+Synthesizing Unit <CAS>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\CAS.vhd".
+    Summary:
+Unit <CAS> synthesized.
+
+Synthesizing Unit <BlockY>.
+    Related source file is "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\BlockY.vhd".
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\BlockY.vhd" line 27: Output port <PO> of the instance <CAS1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\BlockY.vhd" line 28: Output port <PO> of the instance <CAS2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\BlockY.vhd" line 29: Output port <PO> of the instance <CAS3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Study\AUT\Term6\Computer Architecture\Project\project_files\BlockY.vhd" line 30: Output port <PO> of the instance <CAS4> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <BlockY> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 64x16-bit single-port RAM                             : 1
+ 64x16-bit single-port Read Only RAM                   : 1
+ 64x5-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 3
+ 10-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 17-bit adder                                          : 1
+# Registers                                            : 2
+ 16-bit register                                       : 2
+# Latches                                              : 124
+ 1-bit latch                                           : 124
+# Multiplexers                                         : 205
+ 1-bit 2-to-1 multiplexer                              : 200
+ 1-bit 4-to-1 multiplexer                              : 2
+ 10-bit 2-to-1 multiplexer                             : 3
+# FSMs                                                 : 1
+# Xors                                                 : 211
+ 1-bit xor2                                            : 211
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <ROM_module> is unconnected in block <state_machine>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <RAM_module> is unconnected in block <state_machine>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ALU_module> is unconnected in block <state_machine>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <ALU>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0313> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 5-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <input3>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ALU> synthesized (advanced).
+
+Synthesizing (advanced) Unit <RAM>.
+INFO:Xst:3231 - The small RAM <Mram_ram_data> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 16-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <read_write_0>  | low      |
+    |     addrA          | connected to signal <address>       |          |
+    |     diA            | connected to signal <data_in>       |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <RAM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ROM>.
+INFO:Xst:3231 - The small RAM <Mram_rom_data> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 16-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <address>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ROM> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 64x16-bit single-port distributed RAM                 : 1
+ 64x16-bit single-port distributed Read Only RAM       : 1
+ 64x5-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 3
+ 10-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 17-bit adder                                          : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Multiplexers                                         : 205
+ 1-bit 2-to-1 multiplexer                              : 200
+ 1-bit 4-to-1 multiplexer                              : 2
+ 10-bit 2-to-1 multiplexer                             : 3
+# FSMs                                                 : 1
+# Xors                                                 : 211
+ 1-bit xor2                                            : 211
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <MLP>: instances <ha3>, <ha4> of unit <HA> are equivalent, second instance is removed
+WARNING:Xst:1293 - FF/Latch <ALU_on> has a constant value of 1 in block <state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <RAM_on> has a constant value of 1 in block <state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ROM_on> has a constant value of 1 in block <state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1294 - Latch <temp_14> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <temp_16> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <temp_15> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <temp_11> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <temp_13> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <temp_12> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <temp_8> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <temp_10> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <temp_9> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <temp_7> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <temp_6> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <temp_3> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <temp_5> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <temp_4> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <temp_2> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <temp_1> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <temp_0> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <AC_14> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <AC_13> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <AC_10> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <AC_12> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <AC_11> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <AC_7> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <AC_9> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <AC_8> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <AC_4> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <AC_6> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <AC_5> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <AC_3> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <AC_2> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <E> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <AC_1> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <AC_15> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <AC_0> is equivalent to a wire in block <ALU>.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <currentState[1:2]> with user encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ receiving_command | 00
+ decode_command    | 01
+ reading_value     | 10
+ prosses           | 11
+-------------------------------
+WARNING:Xst:1710 - FF/Latch <data_out_3> (without init value) has a constant value of 0 in block <ROM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_4> (without init value) has a constant value of 0 in block <ROM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_5> (without init value) has a constant value of 0 in block <ROM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_6> (without init value) has a constant value of 0 in block <ROM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_7> (without init value) has a constant value of 0 in block <ROM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_8> (without init value) has a constant value of 0 in block <ROM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_9> (without init value) has a constant value of 0 in block <ROM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_13> (without init value) has a constant value of 0 in block <ROM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_14> (without init value) has a constant value of 0 in block <ROM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_15> (without init value) has a constant value of 0 in block <ROM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <IR_14> has a constant value of 0 in block <state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <IR_15> has a constant value of 0 in block <state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <IR_13> has a constant value of 0 in block <state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <IR_9> has a constant value of 0 in block <state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <IR_6> has a constant value of 0 in block <state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <IR_8> has a constant value of 0 in block <state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <IR_7> has a constant value of 0 in block <state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <IR_3> has a constant value of 0 in block <state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <IR_5> has a constant value of 0 in block <state_machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <IR_4> has a constant value of 0 in block <state_machine>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <RAM> ...
+
+Optimizing unit <state_machine> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <SQR> ...
+
+Optimizing unit <MLP> ...
+WARNING:Xst:2677 - Node <IR_12> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <IR_11> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <IR_10> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <IR_2> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <IR_1> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <IR_0> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <E> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_IN_15> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ram_read_on> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AC_13> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AC_10> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AC_12> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AC_11> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AC_9> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AC_8> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AC_5> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AC_7> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AC_6> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AC_2> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AC_4> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AC_3> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AC_1> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AC_0> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AR_0> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AR_1> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_IN_12> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_IN_13> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_IN_11> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_IN_10> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_IN_7> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_IN_9> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_IN_8> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_IN_6> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_IN_5> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_IN_2> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_IN_4> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_IN_3> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_IN_1> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_IN_0> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <PC_8> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <PC_5> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <PC_7> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <PC_6> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <PC_4> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <PC_3> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AC_14> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AR_3> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AR_4> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AR_5> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AR_7> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AR_6> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AR_8> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_IN_14> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <PC_2> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AR_2> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AC_15> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <PC_1> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <PC_0> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <PC_9> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <AR_9> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <currentState_FSM_FFd1> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <currentState_FSM_FFd2> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ROM_module/data_out_12> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ROM_module/data_out_11> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ROM_module/data_out_10> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ROM_module/data_out_2> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ROM_module/data_out_1> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ROM_module/data_out_0> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/Mram_ram_data16> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/Mram_ram_data15> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/Mram_ram_data14> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/Mram_ram_data13> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/Mram_ram_data12> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/Mram_ram_data11> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/Mram_ram_data10> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/Mram_ram_data9> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/Mram_ram_data8> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/Mram_ram_data7> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/Mram_ram_data6> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/Mram_ram_data5> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/Mram_ram_data4> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/Mram_ram_data3> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/Mram_ram_data2> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/Mram_ram_data1> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/data_out_15> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/data_out_14> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/data_out_13> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/data_out_12> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/data_out_11> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/data_out_10> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/data_out_9> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/data_out_8> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/data_out_7> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/data_out_6> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/data_out_5> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/data_out_4> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/data_out_3> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/data_out_2> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/data_out_1> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <RAM_module/data_out_0> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/output_0> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/output_15> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/output_1> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/output_3> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/output_4> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/output_2> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/output_5> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/output_6> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/output_8> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/output_9> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/output_7> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/output_10> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/output_11> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/output_13> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/output_14> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/output_12> of sequential type is unconnected in block <state_machine>.
+WARNING:Xst:2677 - Node <ALU_module/carry> of sequential type is unconnected in block <state_machine>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block state_machine, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : state_machine.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                           1
+ Number of bonded IOBs:                   0  out of    210     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 23.72 secs
+ 
+--> 
+
+Total memory usage is 4617880 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  356 (   0 filtered)
+Number of infos    :   33 (   0 filtered)
+

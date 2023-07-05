@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Study/AUT/Term6/Computer Architecture/Project/project_files/TB_FSM_isim_beh.exe" -prj "D:/Study/AUT/Term6/Computer Architecture/Project/project_files/TB_FSM_beh.prj" "work.TB_FSM" 

@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "D:/Study/AUT/Term6/Computer Architecture/Project 1/ATENA/CPU-DESIGN-VHDL-PART1-master/Project-part1/ALU.xst" -ofn "D:/Study/AUT/Term6/Computer Architecture/Project 1/ATENA/CPU-DESIGN-VHDL-PART1-master/Project-part1/ALU.syr" 
+xst -intstyle ise -ifn "D:/Study/AUT/Term6/Computer Architecture/Project 1/ATENA/CPU-DESIGN-VHDL-PART1-master/Project-part1/ALU.xst" -ofn "D:/Study/AUT/Term6/Computer Architecture/Project 1/ATENA/CPU-DESIGN-VHDL-PART1-master/Project-part1/ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "ALU.ngc" ALU.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ALU_map.ncd ALU.ngd ALU.pcf 
+par -w -intstyle ise -ol high -mt off ALU_map.ncd ALU.ncd ALU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALU.twx ALU.ncd -o ALU.twr ALU.pcf 
+netgen -intstyle ise -s 3  -pcf ALU.pcf -rpw 100 -tpw 0 -ar Structure -tm ALU -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim ALU.ncd ALU_timesim.vhd 
+xst -intstyle ise -ifn "D:/Study/AUT/Term6/Computer Architecture/Project 1/ATENA/CPU-DESIGN-VHDL-PART1-master/Project-part1/ALU.xst" -ofn "D:/Study/AUT/Term6/Computer Architecture/Project 1/ATENA/CPU-DESIGN-VHDL-PART1-master/Project-part1/ALU.syr" 
+xst -intstyle ise -ifn "D:/Study/AUT/Term6/Computer Architecture/Project 1/ATENA/CPU-DESIGN-VHDL-PART1-master/Project-part1/ALU.xst" -ofn "D:/Study/AUT/Term6/Computer Architecture/Project 1/ATENA/CPU-DESIGN-VHDL-PART1-master/Project-part1/ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "ALU.ngc" ALU.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ALU_map.ncd ALU.ngd ALU.pcf 
+par -w -intstyle ise -ol high -mt off ALU_map.ncd ALU.ncd ALU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALU.twx ALU.ncd -o ALU.twr ALU.pcf 
+netgen -intstyle ise -s 3  -pcf ALU.pcf -rpw 100 -tpw 0 -ar Structure -tm ALU -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim ALU.ncd ALU_timesim.vhd 
+xst -intstyle ise -ifn "D:/Study/AUT/Term6/Computer Architecture/Project 1/ATENA/CPU-DESIGN-VHDL-PART1-master/Project-part1/ALU.xst" -ofn "D:/Study/AUT/Term6/Computer Architecture/Project 1/ATENA/CPU-DESIGN-VHDL-PART1-master/Project-part1/ALU.syr" 
+xst -intstyle ise -ifn "D:/Study/AUT/Term6/Computer Architecture/Project 1/ATENA/CPU-DESIGN-VHDL-PART1-master/Project-part1/ALU.xst" -ofn "D:/Study/AUT/Term6/Computer Architecture/Project 1/ATENA/CPU-DESIGN-VHDL-PART1-master/Project-part1/ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "ALU.ngc" ALU.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ALU_map.ncd ALU.ngd ALU.pcf 
+par -w -intstyle ise -ol high -mt off ALU_map.ncd ALU.ncd ALU.pcf 
+xst -intstyle ise -ifn "D:/Study/AUT/Term6/Computer Architecture/Project 1/ATENA/CPU-DESIGN-VHDL-PART1-master/Project-part1/ALU.xst" -ofn "D:/Study/AUT/Term6/Computer Architecture/Project 1/ATENA/CPU-DESIGN-VHDL-PART1-master/Project-part1/ALU.syr" 
+xst -intstyle ise -ifn "D:/Study/AUT/Term6/Computer Architecture/Project 1/ATENA/CPU-DESIGN-VHDL-PART1-master/Project-part1/ALU.xst" -ofn "D:/Study/AUT/Term6/Computer Architecture/Project 1/ATENA/CPU-DESIGN-VHDL-PART1-master/Project-part1/ALU.syr" 

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Study/AUT/Term6/Computer Architecture/Project 1/Code/Project-part1/half_adder.xst" -ofn "D:/Study/AUT/Term6/Computer Architecture/Project 1/Code/Project-part1/half_adder.syr" 
